@@ -1,0 +1,98 @@
+div.imageSub { position: relative; }
+div.imageSub img { z-index: 1; }
+div.imageSub div {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 0;
+  padding: 4px;
+}
+div.imageSub div.blackbg {
+  z-index: 2;
+  color: #000;
+  background-color: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+div.imageSub div.label {
+  z-index: 3;
+  color: white;
+}
+
+/* ============================ */
+
+@media (max-width: 768px) {
+  .title1 {
+      font-size: 36px;
+  }
+  
+  .title0 {
+      font-size: 24px;
+  }
+  
+  .box {
+      padding: 20px;
+      width: 100%;
+  }
+  
+  .married_coundown {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 20px auto;
+  }
+  
+  .countdown-section {
+      margin: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timer-container {
+      min-height: 150px; /* More space on mobile */
+  }
+  
+  .box {
+      padding: 15px;
+  }
+}
+
+
+
+/* Improved invitation content styling only */
+.married_txt {
+  position: relative;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 25px;
+  z-index: 3;
+  /* background: rgba(255, 255, 255, 0.95); */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* Responsive fixes for invitation content */
+@media (max-width: 768px) {
+  .married_txt {
+    padding: 30px 15px;
+    margin-top: 20px;
+  }
+  
+  .invitation-inner {
+    padding: 15px 10px;
+  }
+  
+  .couple-names {
+    font-size: 24px;
+  }
+  
+  .groom, .bride {
+    font-size: 28px;
+  }
+}
+
+/* ============================== */
+
+
