@@ -20,7 +20,51 @@ div.imageSub div.label {
   color: white;
 }
 
+.gallery_item img {
+  height: 350px; /* ajuste la valeur selon ton besoin */
+  object-fit: cover; /* garde un bon cadrage de l’image */
+  width: 100%; /* assure une bonne largeur */
+}
+
+/* ------------------- */
+.gallery_item_test img {
+  height: 500px; /* ajuste la valeur selon ton besoin */
+  object-fit: cover; /* garde un bon cadrage de l’image */
+  width: 100%; /* assure une bonne largeur */
+}
 /* ============================ */
+
+/* Pour tablettes et petits écrans */
+@media (max-width: 768px) {
+  .gallery_item img {
+      height: 250px;
+  }
+}
+
+/* Pour très petits écrans (téléphones) */
+@media (max-width: 480px) {
+  .gallery_item img {
+      height: 180px;
+  }
+}
+
+/* --------------------- */
+
+/* Pour tablettes et petits écrans */
+@media (max-width: 768px) {
+  .gallery_item_test img {
+      height: 350px;
+  }
+}
+
+/* Pour très petits écrans (téléphones) */
+@media (max-width: 480px) {
+  .gallery_item_test img {
+      height: 180px;
+  }
+}
+
+/* ========================== */
 
 @media (max-width: 768px) {
   .title1 {
