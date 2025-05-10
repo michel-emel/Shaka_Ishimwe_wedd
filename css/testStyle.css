@@ -93,6 +93,49 @@ div.imageSub div.label {
   color: white;
 }
 
+/* Hide arrows by default (desktop) */
+.owl-prev, .owl-next {
+  display: none;
+}
+
+/* Show on small screens only */
+@media (max-width: 768px) {
+  .owl-prev, .owl-next {
+    display: block;
+    background-color: #111;  /* very dark */
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    cursor: pointer;
+    animation: shake 1.5s infinite ease-in-out;
+  }
+
+  .owl-prev {
+    left: 10px;
+  }
+
+  .owl-next {
+    right: 10px;
+  }
+}
+
+/* Simple shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  20% { transform: translateY(-50%) translateX(-3px); }
+  40% { transform: translateY(-50%) translateX(3px); }
+  60% { transform: translateY(-50%) translateX(-3px); }
+  80% { transform: translateY(-50%) translateX(3px); }
+}
+
 /* ========================== */
 
 @media (max-width: 768px) {
