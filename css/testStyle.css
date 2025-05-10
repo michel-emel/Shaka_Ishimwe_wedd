@@ -37,14 +37,14 @@ div.imageSub div.label {
 /* Pour tablettes et petits écrans */
 @media (max-width: 768px) {
   .gallery_item img {
-      height: 250px;
+      height: 350px;
   }
 }
 
 /* Pour très petits écrans (téléphones) */
 @media (max-width: 480px) {
   .gallery_item img {
-      height: 180px;
+      height: 280px;
   }
 }
 
